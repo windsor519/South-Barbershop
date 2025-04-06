@@ -4,62 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Barbershop</title>
-    <!-- Bootstrap 4 CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="bg-dark text-white">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center py-3">
-                <h1 class="logo mb-0">Professional Barbershop</h1>
+                <h1 class="logo mb-0">South Barbershop</h1>
                 <nav>
                     <ul class="nav">
-                        <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#about">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                        <li><a class="nav-link text-white" href="#services">Services</a></li>
+                        <li><a class="nav-link text-white" href="#about">About Us</a></li>
+                        <li><a class="nav-link text-white" href="#testimonials">Testimonials</a></li>
+                        <li><a class="nav-link text-white" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <section id="hero" style="background-image: url('https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 20px;">
-        <h2>Your Style, Our Expertise</h2>
-        <p>Experience the best grooming services tailored for men.</p>
-        <a href="#services" class="btn btn-primary">Book an Appointment</a>
+    <!-- Hero Section -->
+    <section id="hero" class="position-relative text-center text-white" style="background-image: url('banner.jpg'); background-size: cover; background-position: center; padding: 150px 20px;">
+        <div style="background-color: rgba(0, 0, 0, 0.6); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+        <div style="position: relative; z-index: 1;">
+            <h2 class="display-4 fw-bold">Your Style, Our Expertise</h2>
+            <p class="lead">Experience premium grooming services tailored for men.</p>
+            <a href="#services" class="btn btn-primary btn-lg mt-3">Book an Appointment</a>
+        </div>
     </section>
 
-    <main class='container'>
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="service-list">
-                <div class="service-item">
-                    <h3>Haircuts</h3>
-                    <p>Classic and modern styles to suit your personality.</p>
+    <!-- Services Section -->
+    <main class="container">
+        <section id="services" class="py-5">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="assets/images/haircut.jpg" class="card-img-top" alt="Haircuts">
+                        <div class="card-body">
+                            <h3 class="card-title">Haircuts</h3>
+                            <p class="card-text">Classic and modern styles to suit your personality.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <h3>Shaves</h3>
-                    <p>Relaxing shaves with premium products.</p>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="assets/images/shave.jpg" class="card-img-top" alt="Shaves">
+                        <div class="card-body">
+                            <h3 class="card-title">Shaves</h3>
+                            <p class="card-text">Relaxing shaves with premium products.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <h3>Beard Grooming</h3>
-                    <p>Expert beard trimming and styling.</p>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="assets/images/beard.jpg" class="card-img-top" alt="Beard Grooming">
+                        <div class="card-body">
+                            <h3 class="card-title">Beard Grooming</h3>
+                            <p class="card-text">Expert beard trimming and styling.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are a team of professional barbers dedicated to providing top-notch grooming services for men. Our barbershop combines traditional techniques with modern styles to ensure you leave looking your best.</p>
+
+        <!-- About Section -->
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">About Us</h2>
+                <p class="text-center">We are a team of professional barbers dedicated to providing top-notch grooming services for men. Our barbershop combines traditional techniques with modern styles to ensure you leave looking your best.</p>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <img src="assets/images/barbershop.jpg" class="img-fluid rounded" alt="Barbershop">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Why Choose Us?</h3>
+                        <ul>
+                            <li>Experienced and skilled barbers</li>
+                            <li>Premium grooming products</li>
+                            <li>Relaxing and welcoming atmosphere</li>
+                            <li>Affordable pricing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">What Our Clients Say</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <blockquote class="blockquote text-center">
+                            <p>"Best haircut I've ever had! Highly recommend."</p>
+                            <footer class="blockquote-footer">John Doe</footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-4">
+                        <blockquote class="blockquote text-center">
+                            <p>"Amazing service and friendly staff. Will come back!"</p>
+                            <footer class="blockquote-footer">Jane Smith</footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-4">
+                        <blockquote class="blockquote text-center">
+                            <p>"The barbers are true professionals. Great experience!"</p>
+                            <footer class="blockquote-footer">Mike Johnson</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 bg-dark text-white">
+            <div class="container">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Address</h5>
+                        <p>3817 Howard Ave #4, Windsor, ON N9E 0B5</p>
+                        <h5>Phone</h5>
+                        <p><a href="tel:+15199000955" class="text-white">+1 (519) 900-0955</a></p>
+                        <h5>Email</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Hours</h5>
+                        <p>Open: 10 a.m. - 8 p.m. (Mon-Sat)</p>
+                        <p>Closed: Sunday</p>
+                        <h5>Book Online</h5>
+                        <p><a href="https://south6iq3.setmore.com" class="btn btn-primary">Book an Appointment</a></p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Professional Barbershop. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 South Barbershop. All rights reserved.</p>
     </footer>
-    <!-- Bootstrap 4 JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
